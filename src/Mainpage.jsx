@@ -20,17 +20,20 @@ import {
 
 const Mainpage = () => {
     return (
-        <Container maxW={'7xl'} p="12">
-            <Heading as="h1">Stories by Chakra Templates</Heading>
+        <Container maxW={'8xl'} p="3" >
+            <Heading >Certificates and Achievements</Heading>
             <Box
                 marginTop={{ base: '1', sm: '5' }}
                 display="flex"
+                
                 flexDirection={{ base: 'column', sm: 'row' }}
-                justifyContent="space-between">
+                // justifyContent="space-between"
+                >
                 <Box
                     display="flex"
                     flex="1"
-                    marginRight="3"
+                    
+                    border="2px"
                     position="relative"
                     alignItems="center">
                     <Box
@@ -38,7 +41,7 @@ const Mainpage = () => {
                         zIndex="2"
                         marginLeft={{ base: '0', sm: '5%' }}
                         marginTop="5%">
-                        <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                        <Link textDecoration="none" _hover={{ textDecoration: 'none' }} >
                             <Image
                                 borderRadius="lg"
                                 src={
@@ -51,6 +54,7 @@ const Mainpage = () => {
                                     transform: 'scale(1.05)',
                                 }}
                             />
+                            
                         </Link>
                     </Box>
                     <Box zIndex="1" width="100%" position="absolute" height="100%">
