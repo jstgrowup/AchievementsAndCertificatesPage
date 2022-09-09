@@ -13,14 +13,24 @@ import { ExternalLinkIcon } from '@chakra-ui/icons';
 import Picture from './Picture';
 import TextCompo from './Text';
 
-
+import Typewriter from 'typewriter-effect';
 
 const Mainpage = () => {
     return (
         <>
             <Box border={"none"} bgColor={"#2563EB"} color={"white"} p={["3", "5", "10", "12"]} w="100%">
                 <Center >
-                    <Heading size={"2xl"}>Certificates and Achievements</Heading>
+
+                    <Heading size={"2xl"}> 
+                    <Typewriter
+                        options={{
+                            strings: ["Certificates and Achievements"],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                    </Heading>
+
                 </Center>
                 <SimpleGrid columns={[1, 1, 1, 2]} gap={"37"} mt={"39"} w={"100%"} >
                     <Picture src={"https://i.ibb.co/FDXBCqC/commencez1-O.gif"} />
@@ -34,7 +44,7 @@ const Mainpage = () => {
                     <Picture src={"https://i.ibb.co/kXyDMk8/Commencez2-O.gif"} />
                     <TextCompo link={"https://drive.google.com/file/d/1YQ7j6HdLjsWlXR2ov98XL_XoxBpFbeIp/view"} heading={"Commencez 2.O"} text={"Commencez 2.O was a 10 hours hackathon that was held in 7th march organized by the department of Bioengineering and technology we were a team of 7 students who organized this whole event i was leading the judges and the guests team from inviting"}></TextCompo>
                     <TextCompo link={"https://drive.google.com/file/d/1HPaEf0L1jy_6z2EnC18NAnZkhiCWMVlV/view"} heading={"National Seminar On Directions and Oppurtunities for Implementing Education Policy 2020 in Noth-East"} text={"hdgas"}></TextCompo>
-                    <Picture src={"https://i.ibb.co/nnm6X9c/NEP.gif"}/>
+                    <Picture src={"https://i.ibb.co/nnm6X9c/NEP.gif"} />
                 </SimpleGrid >
 
 

@@ -10,6 +10,7 @@ import {
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 
+
 function TextCompo({ heading, text, link }) {
   return (
     <Box
