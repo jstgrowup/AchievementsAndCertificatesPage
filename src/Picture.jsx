@@ -28,13 +28,8 @@ function Picture({ src }) {
                         transform: 'scale(1.05)',
                     }}
                 />
-
-            </Center>
-
-
-
-
-        </Box>
+             </Center>
+         </Box>
     )
 }
 
