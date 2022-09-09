@@ -1,10 +1,11 @@
 import React from 'react';
 import {
     Box,
-  
+
     Link,
     Image,
- 
+    Center,
+
 } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 
@@ -12,12 +13,13 @@ import { ExternalLinkIcon } from '@chakra-ui/icons';
 function Picture({ src }) {
     return (
         <Box  >
-            <Link textDecoration="none" _hover={{ textDecoration: 'none' }} >
+            <Center>
+
                 <Image
                     borderRadius="lg"
                     // border={"2px"}
-                    minW={["250px", "300px", "640px", "520px"]}
-                    minH={["290px", "301px"]}
+                    minW={["250px", "500px", "670px", "520px"]}
+                    minH={["200px", "250px", "301px"]}
                     src={src}
                     alt="some good alt text"
                     // objectFit="contain"
@@ -27,7 +29,11 @@ function Picture({ src }) {
                     }}
                 />
 
-            </Link>
+            </Center>
+
+
+
+
         </Box>
     )
 }
