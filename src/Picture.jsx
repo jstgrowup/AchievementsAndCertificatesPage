@@ -16,9 +16,10 @@ function Picture({ src }) {
             <Center>
 
                 <Image
+                    boxShadow="rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
                     borderRadius="lg"
-                    // border={"2px"}
-                    minW={["250px", "500px", "670px", "520px"]}
+                   
+                    minW={["250px", "500px", "670px", "560px"]}
                     minH={["200px", "250px", "301px"]}
                     src={src}
                     alt="some good alt text"
@@ -28,8 +29,8 @@ function Picture({ src }) {
                         transform: 'scale(1.05)',
                     }}
                 />
-             </Center>
-         </Box>
+            </Center>
+        </Box>
     )
 }
 
