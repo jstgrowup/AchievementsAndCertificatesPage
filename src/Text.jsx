@@ -30,7 +30,7 @@ function TextCompo({ heading, text, link }) {
       <Text
 
 
-        size="md">
+        fontSize="lg">
         {text}
       </Text>
       <Heading size={"sm"}>
