@@ -22,7 +22,7 @@ function TextCompo({ heading, text, link }) {
 
     >
 
-      <Heading marginTop="1" fontSize={"30px"}>
+      <Heading marginTop="1" fontSize={"33px"}>
 
         {heading}
 
@@ -34,7 +34,7 @@ function TextCompo({ heading, text, link }) {
         fontSize="lg">
         {text}
       </Text>
-      <Heading size={"sm"}>
+      <Heading fontSize={"24px"}>
         <Link href={link} target={"_blank"}>Certificate <ExternalLinkIcon /> </Link>
       </Heading>
     </Box>
