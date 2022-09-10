@@ -18,6 +18,7 @@ function TextCompo({ heading, text, link }) {
       flex="1"
       flexDirection="column"
       justifyContent="center"
+      fontFamily={"sans-serif"}
 
     >
 
