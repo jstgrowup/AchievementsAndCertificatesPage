@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Box,
+  Center,
   Heading,
   Link,
 
@@ -21,22 +22,27 @@ function TextCompo({ heading, text, link }) {
       fontFamily={"sans-serif"}
 
     >
+      <Center>
+        <Heading marginTop="1" fontSize={"33px"}>
 
-      <Heading marginTop="1" fontSize={"33px"}>
+          {heading}
 
-        {heading}
+        </Heading>
+      </Center>
 
-      </Heading>
       <hr style={{ height: "1px", backgroundColor: "white" }} />
       <Text
 
-
+        align={"center"}
         fontSize="lg">
         {text}
       </Text>
-      <Heading fontSize={"24px"}>
-        <Link href={link} target={"_blank"}>Certificate <ExternalLinkIcon /> </Link>
-      </Heading>
+      <Center>
+        <Heading fontSize={"24px"}>
+          <Link href={link} target={"_blank"}>Certificate <ExternalLinkIcon /> </Link>
+        </Heading>
+      </Center>
+
     </Box>
   )
 }
