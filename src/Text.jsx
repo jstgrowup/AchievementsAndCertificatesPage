@@ -20,6 +20,7 @@ function TextCompo({ heading, text, link }) {
       flexDirection="column"
       justifyContent="center"
       fontFamily={"sans-serif"}
+      data-aos="fade-up" data-aos-duration="2000"
 
     >
       <Center>

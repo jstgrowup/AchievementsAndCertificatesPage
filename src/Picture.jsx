@@ -12,13 +12,13 @@ import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 function Picture({ src }) {
     return (
-        <Box  >
+        <div data-aos="fade-up" data-aos-duration="2000">
             <Center>
 
                 <Image
                     boxShadow="rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
                     borderRadius="lg"
-                   
+
                     minW={["250px", "500px", "670px", "560px"]}
                     minH={["200px", "250px", "301px"]}
                     src={src}
@@ -30,7 +30,7 @@ function Picture({ src }) {
                     }}
                 />
             </Center>
-        </Box>
+        </div>
     )
 }
 
