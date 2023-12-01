@@ -1,16 +1,6 @@
-import React from 'react';
-import {
-  Box,
-  Center,
-  Heading,
-  Link,
-
-  Text,
-
-} from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
-
-
+import React from "react";
+import { Box, Center, Heading, Link, Text } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 function TextCompo({ heading, text, link }) {
   return (
@@ -19,33 +9,29 @@ function TextCompo({ heading, text, link }) {
       flex="1"
       flexDirection="column"
       justifyContent="center"
-      fontFamily={"sans-serif"}
-      data-aos="fade-up" data-aos-duration="2000"
-
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      style={{ fontFamily: "Inter" }}
     >
       <Center>
         <Heading marginTop="1" fontSize={"33px"}>
-
           {heading}
-
         </Heading>
       </Center>
 
       <hr style={{ height: "1px", backgroundColor: "white" }} />
-      <Text
-
-        align={"center"}
-        fontSize="lg">
+      <Text align={"center"} fontSize="lg" fontWeight="medium">
         {text}
       </Text>
       <Center>
         <Heading fontSize={"24px"}>
-          <Link href={link} target={"_blank"}>Certificate <ExternalLinkIcon /> </Link>
+          <Link href={link} target={"_blank"}>
+            Certificate <ExternalLinkIcon />{" "}
+          </Link>
         </Heading>
       </Center>
-
     </Box>
-  )
+  );
 }
 
-export default TextCompo
+export default TextCompo;

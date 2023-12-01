@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Mainpage from './Mainpage'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import Mainpage from "./Mainpage";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-    <Mainpage/>
+      <Mainpage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
